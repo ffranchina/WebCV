@@ -24,11 +24,11 @@ Technically we have a simple [Handlebars] template that renders some JSON that c
 
 ## Do you want your WebCV?
 Easy, especially on [Gitlab] (because of the integrated CI capability).
-    - clone, fork or download this repo
-    - make sure to have `nodejs` and `grunt-cli` installed
-    - type `npm install` in the project directory
-    - type `grunt` to build the project and verify it's all fine
-    - modify your `resume.json` and push it
+  - clone, fork or download this repo
+  - make sure to have `nodejs` and `grunt-cli` installed
+  - type `npm install` in the project directory
+  - type `grunt` to build the project and verify it's all fine
+  - modify your `resume.json` and push it
 
 [Gitlab]: https://gitlab.com/
 
