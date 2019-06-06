@@ -1,0 +1,24 @@
+{
+  "name": "webcv",
+  "version": "1.0.0",
+  "description": "Simple application to generate a complete webCV from a json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ffranchina/webcv.git"
+  },
+  "author": "Francesco Franchina",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-handlebars-layouts": "^0.3.0",
+    "grunt-sass": "^3.0.2",
+    "handlebars-helper-moment": "^0.2.0",
+    "handlebars-helpers": "^0.10.0",
+    "node-sass": "^4.12.0"
+  }
+}
