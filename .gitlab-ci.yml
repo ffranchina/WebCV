@@ -1,0 +1,12 @@
+image: node:lts-alpine
+
+pages:
+    script:
+        - npm install
+        - npm install -g grunt-cli
+        - grunt
+        - mv build public
+        
+    artifacts:
+        paths:
+            - public
