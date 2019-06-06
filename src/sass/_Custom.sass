@@ -1,0 +1,137 @@
+
+#header 
+	background: $bg-grey
+	padding: 3.5em 0
+	margin-bottom: 3.5em
+
+	.profession
+		color: $light-grey
+		font-size: 1.7em
+
+	a
+		color: inherit
+
+section 
+	margin-bottom: 2em
+
+#content aside 
+	color: $color-yellow
+	font-size: 26px
+	text-align: right
+	padding-right: 2em
+
+#work .item,
+#volunteer .item,
+#education .item,
+#awards .item,
+#publications .item
+    position: relative
+
+    &:not(:last-child)
+        margin-bottom: .8em
+
+    & > .column::before
+        position: absolute
+        z-index: -1
+        content: ""
+        display: block
+        left: 50px
+        right: 50px
+        top: 1.1em
+        border-top: 1px solid $fg-grey
+
+#skills .item,
+#interests .item,
+#languages .item
+    margin-bottom: 1.5em;
+
+.item-content:not(:empty)
+    margin-top: .8em
+
+#work .company,
+#volunteer .organization,
+#education .institution,
+#languages .language
+    font-weight: bold
+
+#content h4 
+    color: $color-primary
+    font-weight: bold
+    background: $background
+    display: inline-block
+    padding-right: 20px
+    margin: 0
+
+    &.withline::after
+        content: ""
+        display: block
+
+#content .smalltext
+    font-size: .8em
+
+#content .date.smalltext
+    float: right
+    background: $background
+    display: inline-block
+    margin-top: .6em
+    padding-left: 20px
+
+#content .location.smalltext
+    float: right
+    display: inline-block
+
+#languages .language
+    color: $color-primary
+
+#publications .resource
+    padding-left: .5em
+    font-size: .7em
+    vertical-align: text-top
+
+.keywords > li
+    border: 1px solid #ddd
+    display: inline-block
+    padding: 0 1em
+    line-height: 1.2
+
+    &::before
+        display: none
+
+
+.level 
+    margin-bottom: .5em
+    font-style: italic
+
+.level .bar 
+    border: 1px solid $fg-grey
+    display: block
+    width: 10em
+    height: 5px
+    position: relative
+    box-sizing: content-box
+
+.level .bar::after 
+    position: absolute
+    content: ""
+    top: 0
+    left: 0
+    height: 100%
+
+.level.beginner .bar::after 
+    background: $color-red
+    width: 2.5em
+
+.level.intermediate .bar::after 
+    background: $color-yellow
+    width: 5em
+
+.level.advanced .bar::after,
+.level.fluent .bar::after 
+    background: $color-blue
+    width: 7.5em
+
+.level.master .bar::after,
+.level.native.speaker .bar::after 
+    background: $color-green
+    width: 10em
+

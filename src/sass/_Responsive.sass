@@ -1,0 +1,40 @@
+
+@media screen and (orientation:portrait)
+    
+    #header
+        text-align: center
+        
+        .column-80
+            max-width: unset
+
+        .column-offset-20
+            margin-left: 0
+            
+        .row:last-child
+            .column
+                max-width: unset
+                margin-top: 1em
+
+    #content
+        aside
+            max-width: unset
+            padding-right: 0
+            text-align: left
+        
+        .column-80,
+        .column-33
+            max-width: unset
+            
+        .column-80
+            .column::before
+                right: 0
+        
+        .date.smalltext
+            display: block
+            float: none
+            margin-top: 0
+            padding-left: 0
+            
+        .location.smalltext
+            float: none
+

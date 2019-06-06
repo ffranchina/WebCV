@@ -1,0 +1,311 @@
+{
+  "basics": {
+    "name": "Francesco Franchina",
+    "label": "Data scientist & Web Developer",
+    "email": "cescus92@gmail.com",
+    "phone": "",
+    "website": "",
+    "summary": "Born in 1992, curious and lively person since childhood. The passion for computer science came out during the school along with life sciences and maths, passions that found their intersection in the project developed as bachelor thesis. After some years of work as full stack developer, decides to go back to university to follow the data science path.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Messina",
+      "countryCode": "IT",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Istituto di BioFisica - CNR",
+      "position": "Full stack developer",
+      "website": "http://www.pa.ibf.cnr.it/",
+      "startDate": "2016-06-01",
+      "endDate": "2016-12-31",
+      "location": {
+        "city": "Palermo",
+        "countryCode": "IT"
+      },
+      "highlights": [
+        "Unit testing and porting of scientific libraries",
+        "Managing supercomputer tasks at CINECA",
+        "UI/UX designer for scientific web platforms",
+        "Working within the Human Brain Project"
+      ]
+    },
+    {
+      "company": "Libera Inc.",
+      "position": "Consultant developer",
+      "website": "https://www.libera.com/",
+      "startDate": "2015-10-01",
+      "endDate": "2015-12-31",
+      "location": {
+        "city": "Jamestown",
+        "countryCode": "US",
+        "region": "NY"
+      },
+      "highlights": [
+        "Frontent developer",
+        ".NET backend developer"
+      ]
+    },
+    {
+      "company": "Seed S.r.l.",
+      "position": "Full stack developer",
+      "website": "http://www.webseed.it/",
+      "startDate": "2014-09-08",
+      "endDate": "2016-04-25",
+      "location": {
+        "city": "Messina",
+        "countryCode": "IT"
+      },
+      "highlights": [
+        "Backend developer and database maintainer",
+        "Frontend developer and UX designer",
+        "Server management (services and networking)",
+        "Wordpress plugins and themes developer",
+        "Versioning and Continuous Integration"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Università degli Studi di Trieste",
+      "website": "http://units.it/",
+      "area": "Data science",
+      "studyType": "Master degree",
+      "startDate": "2017-10-01",
+      "endDate": "",
+      "location": {
+        "city": "Trieste",
+        "countryCode": "IT"
+      },
+      "courses": ["Mathematics", "Statistics", "Machine learning", "Neural networks", "High performance computing", "Computer Vision"]
+    },
+    {
+      "institution": "Università degli Studi di Messina",
+      "website": "http://unime.it/",
+      "area": "Computer science",
+      "studyType": "Bachelor degree",
+      "startDate": "2011-10-01",
+      "endDate": "2014-12-10",
+      "location": {
+        "city": "Messina",
+        "countryCode": "IT"
+      },
+      "courses": ["Programming", "Databases", "Operating systems", "Networks", "Mathematics", "Physics"]
+    },
+    {
+      "institution": "Institut für Mathematik der Universität Potsdam",
+      "website": "https://www.math.uni-potsdam.de/",
+      "area": "Bayesian field",
+      "studyType": "Thesis development",
+      "startDate": "2014-04-28",
+      "endDate": "2014-06-02",
+      "location": {
+        "city": "Potsdam",
+        "countryCode": "DE"
+      },
+      "courses": ["Bayesian Inference", "Fractals", "Scientific programming"]
+    },
+    {
+      "institution": "Liceo scientifico \"G. Seguenza\"",
+      "area": "Scientific field",
+      "studyType": "High school degree",
+      "startDate": "2006-09-01",
+      "endDate": "2011-07-01",
+      "location": {
+        "city": "Messina",
+        "countryCode": "IT"
+      },
+      "courses": ["General knowledge", "Philosophy"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "FabLab Messina",
+      "position": "Team member",
+      "website": "http://fablabmessina.it/",
+      "startDate": "2012-10-01",
+      "endDate": "",
+      "location": {
+        "city": "Messina",
+        "countryCode": "IT"
+      },
+      "highlights": [
+        "Community manager",
+        "Web master of the official website",
+        "Do It Yourself projects"
+      ]
+    },
+    {
+      "organization": "La Scuola Open Source",
+      "position": "Selected co-designer of processes",
+      "website": "http://www.lascuolaopensource.xyz/",
+      "startDate": "2017-07-23",
+      "endDate": "2017-07-31",
+      "location": {
+        "city": "Bari",
+        "countryCode": "IT",
+        "region": ""
+      },
+      "highlights": []
+    },
+    {
+      "organization": "Trasformatorio",
+      "position": "Selected media artist",
+      "website": "http://trasformatorio.net/",
+      "startDate": "2017-05-01",
+      "endDate": "2017-05-08",
+      "location": {
+        "city": "Scaletta Zanclea",
+        "countryCode": "IT",
+        "region": "Messina"
+      },
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Scholarship \"Training the Specialists of the Future\"",
+      "date": "2017-12-19",
+      "awarder": "University of Trieste"
+    },
+    {
+      "title": "First place in the civic hackaton #OpenGov",
+      "date": "2017-03-11",
+      "awarder": "Municipality of Messina"
+    },
+    {
+      "title": "Awarded student \"Messaggeri della Conoscenza\"",
+      "date": "2014-03-01",
+      "awarder": "University of Messina"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Webservices REST"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "C/C++",
+        "Java",
+        "Javascript",
+        "PHP"
+      ]
+    },
+    {
+      "name": "Sysadmin",
+      "level": "Advanced",
+      "keywords": [
+        "Unix",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Data Science",
+      "level": "Master",
+      "keywords": [
+        "Jupyter notebook",
+        "Modelling",
+        "Validation"
+      ]
+    },
+    {
+      "name": "Dataviz",
+      "level": "Advanced",
+      "keywords": [
+        "Foundations",
+        "d3.js",
+        "Matplotlib/Bokeh"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "Advanced",
+      "keywords": [
+        "Classic methods",
+        "Deep Learning",
+        "NLP",
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "name": "Do It Youself",
+      "level": "Advanced",
+      "keywords": [
+        "Lasercutting",
+        "Milling",
+        "3D Printing"
+      ]
+    },
+    {
+      "name": "Embedded Programming",
+      "level": "Advanced",
+      "keywords": [
+        "Atmel",
+        "ARM",
+        "RTOS"
+      ]
+    },
+    {
+      "name": "Computer Vision",
+      "level": "Intermediate",
+      "keywords": [
+        "Classical Approaches",
+        "Machine Leaning"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Biology",
+      "keywords": [
+        "Cognitive neuroscience",
+        "Ethology",
+        "Physiology"
+      ]
+    },
+    {
+      "name": "Philosophy",
+      "keywords": [
+        "Ethics",
+        "Sociology"
+      ]
+    },
+    {
+      "name": "Art & Design",
+      "keywords": [
+        "Procedural Methods",
+        "3D Modelling",
+        "Typography"
+      ]
+    }
+  ]
+}

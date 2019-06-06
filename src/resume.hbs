@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>{{#basics}}{{name}}{{/basics}}</title>
+
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="column column-80 column-offset-20">
+					{{#basics}}
+					{{#name}}
+					<h1>
+						{{.}}
+					</h1>
+					{{/name}}
+					{{#label}}
+					<span class="profession">
+						{{.}}
+					</span>
+					{{/label}}                  
+
+                    {{#summary}}
+                    <hr>
+                    <div class="row">
+		                <div class="column">
+			                <p>{{.}}</p>
+		                </div>
+                    </div>
+                    {{/summary}}
+
+                    <div class="row">
+			            {{#if email}}
+			            <div class="column column-33">
+				            <span class="fas fa-fw fa-envelope"></span>
+                            <span class="email"><a href="mailto:{{email}}">{{email}}</a></span>
+			            </div>
+			            {{/if}}
+
+			            {{#if phone}}
+			            <div class="column column-33">
+				            <span class="fas fa-fw fa-phone"></span>
+                            <span class="website"><a href="tel:{{phone}}">{{phone}}</a></span>
+			            </div>
+			            {{/if}}
+
+			            {{#if website}}
+			            <div class="column column-33">
+				            <span class="fas fa-fw fa-link"></span>
+                            <span class="website"><a href="{{website}}">{{website}}</a></span>
+			            </div>
+			            {{/if}}
+                    </div>  
+
+                    {{/basics}}
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="content" class="container">
+
+	    {{#basics}}
+	    {{#if profiles.length}}
+	    <section id="profiles" class="row">
+		    <aside class="column column-20">
+			    <h3>Profiles</h3>
+		    </aside>
+		    <div class="column column-80">
+			    <div class="row">
+				    {{#profiles}}
+				    <div class="column column-50">
+					    {{#network}}
+					    <strong class="network">
+						    {{.}}
+					    </strong>
+					    {{/network}}
+					    {{#if username}}
+					    <div class="username">
+						    {{#if url}}
+						    <div class="url">
+							    <a href="{{url}}">{{username}}</a>
+						    </div>
+						    {{else}}
+							    {{username}}
+						    {{/if}}
+					    </div>
+					    {{else}}
+						    {{#if url}}
+						    <div class="url">
+							    <a href="{{url}}">{{url}}</a>
+						    </div>
+						    {{/if}}
+					    {{/if}}
+				    </div>
+				    {{/profiles}}
+			    </div>
+		    </div>
+	    </section>
+	    {{/if}}
+	    {{/basics}}
+
+	    {{#if work.length}}
+	    <section id="work" class="row">
+		    <aside class="column column-20">
+			    <h3>Work</h3>
+		    </aside>
+		    <div class="column column-80">
+			    {{#each work}}
+                <div class="row item">
+			        <div class="column">
+                        <h4 class="position withline">{{position}}</h4>
+				        <span class="date smalltext">
+					        {{moment startDate format="MMMM YYYY"}} —
+                            {{#if endDate}} {{moment endDate format="MMMM YYYY"}} {{else}} Present {{/if}}
+				        </span>
+
+                        <div>
+				            {{#if company}}
+				            <span class="company">
+                                {{#website}} <a href="{{.}}"> {{/website}}
+                                {{company}}
+				                {{#website}} </a> {{/website}}
+				            </span>
+				            {{/if}}
+
+		                    {{#location}}
+		                    <span class="location smalltext">
+			                    <span class="fas fa-fw fa-map-marker-alt"></span> 
+			                    {{#if city}}
+			                    <span class="city">{{city}}</span>
+			                    {{/if}}
+			                    {{#if region}}
+			                    <span class="region">, {{region}}</span> 
+			                    {{/if}}
+			                    {{#if countryCode}}
+			                    <span class="countryCode">({{countryCode}})</span> 
+			                    {{/if}} 
+		                    </span>
+                            {{/location}}
+                        </div>
+
+                        <div class="item-content"><!--
+				            -->{{#summary}}
+				            <div class="summary">
+					            <p>{{.}}</p>
+				            </div>
+				            {{/summary}}<!--
+
+				            -->{{#if highlights.length}}
+				            <ul class="highlights">
+					            {{#highlights}}
+					            <li class="bullet">{{.}}</li>
+					            {{/highlights}}
+				            </ul>
+				            {{/if}}<!--
+                        --></div>
+			        </div>
+			    </div>
+			    {{/each}}
+		    </div>
+	    </section>
+	    {{/if}}
+
+	    {{#if education.length}}
+	    <section id="education" class="row">
+		    <aside class="column column-20">
+			    <h3>Education</h3>
+		    </aside>
+		    <div class="column column-80">
+			    {{#each education}}
+                <div class="row item">
+			        <div class="column">
+                        <h4 class="studies withline">
+                            {{#if studyType}}
+                                {{studyType}} in
+                            {{/if}} 
+                            {{area}}
+                        </h4>
+				        <span class="date smalltext">
+					        {{moment startDate format="MMMM YYYY"}} —
+                            {{#if endDate}} {{moment endDate format="MMMM YYYY"}} {{else}} Present {{/if}}
+				        </span>
+
+                        <div>
+                            {{#website}} <a href="{{.}}"> {{/website}}
+                            <span class="institution">{{institution}}</span>
+			                {{#website}} </a> {{/website}}
+
+		                    {{#location}}
+		                    <span class="location smalltext">
+			                    <span class="fas fa-fw fa-map-marker-alt"></span> 
+			                    {{#if city}}
+			                    <span class="city">{{city}}</span>
+			                    {{/if}}
+			                    {{#if region}}
+			                    <span class="region">, {{region}}</span> 
+			                    {{/if}}
+			                    {{#if countryCode}}
+			                    <span class="countryCode">({{countryCode}})</span> 
+			                    {{/if}} 
+		                    </span>
+                            {{/location}}
+                        </div>
+
+                        <div class="item-content"><!--
+                            -->{{#summary}}
+				            <div class="summary">
+					            <p>{{.}}</p>
+				            </div>
+				            {{/summary}}<!--
+
+				            -->{{#if highlights.length}}
+				            <ul class="highlights">
+					            {{#highlights}}
+					            <li class="bullet">{{.}}</li>
+					            {{/highlights}}
+				            </ul>
+				            {{/if}}<!--
+
+				            -->{{#if courses.length}}
+				            <ul class="courses">
+					            {{#courses}}
+					            <li>{{.}}</li>
+					            {{/courses}}
+				            </ul>
+				            {{/if}}<!--
+                        --></div>
+			        </div>
+			    </div>
+			    {{/each}}
+		    </div>
+	    </section>
+	    {{/if}}
+
+	    {{#if volunteer.length}}
+	    <section id="volunteer" class="row">
+		    <aside class="column column-20">
+			    <h3>Volunteer</h3>
+		    </aside>
+		    <div class="column column-80">
+			    {{#each volunteer}}
+                <div class="row item">
+			        <div class="column">
+                        <h4 class="position withline">{{position}}</h4>
+				        <span class="date smalltext">
+					        {{moment startDate format="MMMM YYYY"}} —
+                            {{#if endDate}} {{moment endDate format="MMMM YYYY"}} {{else}} Present {{/if}}
+				        </span>
+
+                        <div>
+				            {{#if organization}}
+				            <span class="organization">
+                                {{#website}} <a href="{{.}}"> {{/website}}
+                                {{organization}}
+				                {{#website}} </a> {{/website}}
+				            </span>
+				            {{/if}}
+
+		                    {{#location}}
+		                    <span class="location smalltext">
+			                    <span class="fas fa-fw fa-map-marker-alt"></span> 
+			                    {{#if city}}
+			                    <span class="city">{{city}}</span>
+			                    {{/if}}
+			                    {{#if region}}
+			                    <span class="region">, {{region}}</span> 
+			                    {{/if}}
+			                    {{#if countryCode}}
+			                    <span class="countryCode">({{countryCode}})</span> 
+			                    {{/if}} 
+		                    </span>
+                            {{/location}}
+                        </div>
+
+                        <div class="item-content"><!--
+				            -->{{#summary}}
+				            <div class="summary">
+					            <p>{{.}}</p>
+				            </div>
+				            {{/summary}}<!--
+
+				            -->{{#if highlights.length}}
+				            <ul class="highlights">
+					            {{#highlights}}
+					            <li class="bullet">{{.}}</li>
+					            {{/highlights}}
+				            </ul>
+				            {{/if}}<!--
+                        --></div>
+			        </div>
+			    </div>
+			    {{/each}}
+		    </div>
+	    </section>
+	    {{/if}}
+	    
+	    {{#if skills.length}}
+	    <section id="skills" class="row">
+		    <aside class="column column-20">
+			    <h3>Skills</h3>
+		    </aside>
+		    <div class="column column-80">
+			    <div class="row row-wrap">
+			    {{#each skills}}
+			    <div class="column column-33 item">
+				    {{#name}}
+				    <div class="name">
+					    <h4>{{.}}</h4>
+				    </div>
+				    {{/name}}
+                    {{#if level}}
+                    <div class="level {{lowercase level}}">
+                        <em>{{level}}</em>
+                        <div class="bar"></div>
+                    </div>
+                    {{/if}}
+				    {{#if keywords.length}}
+				    <ul class="keywords">
+					    {{#keywords}}
+					    <li>{{.}}</li>
+					    {{/keywords}}
+				    </ul>
+				    {{/if}}
+			    </div>
+			    {{/each}}
+			    </div>
+		    </div>
+	    </section>
+	    {{/if}}
+
+	    {{#if interests.length}}
+	    <section id="interests" class="row">
+		    <aside class="column column-20">
+			    <h3>Interests</h3>
+		    </aside>
+		    <div class="column column-80">
+			    <div class="row row-wrap">
+			    {{#each interests}}
+			    <div class="column column-33 item">
+				    {{#name}}
+				    <div class="name">
+					    <h4>{{.}}</h4>
+				    </div>
+				    {{/name}}
+				    {{#if keywords.length}}
+				    <ul class="keywords">
+					    {{#keywords}}
+					    <li>{{.}}</li>
+					    {{/keywords}}
+				    </ul>
+				    {{/if}}
+			    </div>
+			    {{/each}}
+			    </div>
+		    </div>
+	    </section>
+	    {{/if}}
+
+	    {{#if publications.length}}
+	    <section id="publications" class="row">
+		    <aside class="column column-20">
+			    <h3>Publications</h3>
+		    </aside>
+		    <div class="column column-80">
+                {{#each publications}}
+                <div class="row item">
+			        <div class="column">
+                        <h4 class="publication withline">
+                            {{name}}
+                            
+				            {{#website}}
+					            <a href="{{.}}" class="resource">
+					                <span class="fas fa-external-link-alt"></span>
+					            </a>
+				            {{/website}}
+                        </h4>
+				        <span class="date smalltext">
+					        {{moment releaseDate format="MMMM YYYY"}}
+				        </span>
+
+                        <div>
+				            {{#summary}}
+				            <div class="summary">
+					            <p>{{.}}</p>
+				            </div>
+				            {{/summary}}
+                        </div>
+			        </div>
+			    </div>
+			    {{/each}}
+		    </div>
+	    </section>
+	    {{/if}}
+
+        {{#if awards.length}}
+	    <section id="awards" class="row">
+		    <aside class="column column-20">
+			    <h3>Awards</h3>
+		    </aside>
+		    <div class="column column-80">
+                {{#each awards}}
+                <div class="row item">
+			        <div class="column">
+                        <h4 class="award withline">
+                            {{title}}
+                        </h4>
+				        <span class="date smalltext">
+					        {{moment date format="MMMM YYYY"}}
+				        </span>
+
+                        <div>
+				            {{#awarder}}
+				            <span class="awarder"> {{.}} </span>
+				            {{/awarder}}
+                        </div>
+			        </div>
+			    </div>
+			    {{/each}}
+		    </div>
+	    </section>
+	    {{/if}}
+
+	    {{#if languages.length}}
+	    <section id="languages" class="row">
+		    <aside class="column column-20">
+			    <h3>Languages</h3>
+		    </aside>
+		    <div class="column column-80">
+			    <div class="row row-wrap">
+			    {{#each languages}}
+			    <div class="column column-33 item">
+				    {{#language}}
+				    <div class="language">
+					    <span>{{.}}</span>
+				    </div>
+				    {{/language}}
+
+                    {{#if fluency}}
+                    <div class="level {{lowercase fluency}}">
+                        <span>{{fluency}}</span>
+                        <div class="bar"></div>
+                    </div>
+                    {{/if}}
+			    </div>
+			    {{/each}}
+			    </div>
+		    </div>
+	    </section>
+	    {{/if}}
+
+	    </div>
+	</body>
+</html>
