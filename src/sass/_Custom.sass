@@ -28,7 +28,7 @@ section
     position: relative
 
     &:not(:last-child)
-        margin-bottom: .8em
+        margin-bottom: 1.2rem
 
     & > .column::before
         position: absolute
@@ -45,8 +45,14 @@ section
 #languages .item
     margin-bottom: 1.5em;
 
-.item-content:not(:empty)
-    margin-top: .8em
+.item-content
+    font-size: 0
+
+    & > *
+        font-size: 1.6rem
+
+    &:not(:empty)
+        margin-top: 1.2rem
 
 #work .company,
 #experiences .organization,
