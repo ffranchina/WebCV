@@ -245,8 +245,16 @@
 			        <div class="column">
                         <h4 class="position withline">{{position}}</h4>
 				        <span class="date smalltext">
-					        {{moment startDate format="MMMM YYYY"}} —
-                            {{#if endDate}} {{moment endDate format="MMMM YYYY"}} {{else}} Present {{/if}}
+				            {{#if endDate}}
+                                {{#is (moment startDate format="MMMM YYYY") (moment endDate format="MMMM YYYY")}}
+                                    {{moment startDate format="MMMM YYYY"}}
+                                {{else}}
+                                    {{moment startDate format="MMMM YYYY"}} —
+                                    {{moment endDate format="MMMM YYYY"}}
+                                {{/is}}
+                            {{else}}
+                                {{moment startDate format="MMMM YYYY"}} — Present
+                            {{/if}}
 				        </span>
 
                         <div>
