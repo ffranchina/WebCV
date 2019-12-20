@@ -139,6 +139,19 @@
       ]
     },
     {
+      "organization": "Design Your Job",
+      "position": "Web design course supervisor",
+      "website": "http://www.designyourjob.org/",
+      "startDate": "2019-11-22",
+      "endDate": "2019-11-25",
+      "location": {
+        "city": "Novi Sad",
+        "countryCode": "RS",
+        "region": ""
+      },
+      "highlights": []
+    },
+    {
       "organization": "Social Hackathon Umbria",
       "position": "Selected Team leader",
       "website": "http://www.socialhackathonumbria.info/",
