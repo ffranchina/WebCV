@@ -1,4 +1,7 @@
 
+$entry-padding: 1.2rem
+$smalltext-size: 1.3rem
+
 #header 
 	background: $bg-grey
 	padding: 3.5em 0
@@ -28,7 +31,7 @@ section
     position: relative
 
     &:not(:last-child)
-        margin-bottom: 1.2rem
+        margin-bottom: $entry-padding
 
     & > .column::before
         position: absolute
@@ -52,7 +55,7 @@ section
         font-size: 1.6rem
 
     &:not(:empty)
-        margin-top: 1.2rem
+        margin-top: $entry-padding
 
 #work .company,
 #experiences .organization,
@@ -73,7 +76,7 @@ section
         display: block
 
 #content .smalltext
-    font-size: .8em
+    font-size: $smalltext-size
 
 #content .date.smalltext
     float: right
@@ -82,9 +85,18 @@ section
     margin-top: .6em
     padding-left: 20px
 
-#content .location.smalltext
-    float: right
-    display: inline-block
+#content .location
+    font-size: 0
+
+    & > *
+        font-size: $smalltext-size
+
+    &.smalltext
+        float: right
+        display: inline-block
+
+    .countryCode::before
+        content: '\a0'
 
 #languages .language
     color: $color-primary
