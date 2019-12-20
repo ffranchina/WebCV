@@ -17,6 +17,16 @@
   },
   "work": [
     {
+      "company": "Freelance",
+      "position": "Web developer",
+      "startDate": "2019-04-20",
+      "endDate": "",
+      "highlights": [
+        "Creation of Spuntì portal for Bolton Food S.p.A.",
+        "Creation of VinciSuprema contest portal for Cesare Fiorucci S.p.A."
+      ]
+    },
+    {
       "company": "Istituto di BioFisica - CNR",
       "position": "Full stack developer",
       "website": "http://www.pa.ibf.cnr.it/",
