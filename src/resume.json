@@ -244,26 +244,31 @@
     },
     {
       "name": "Sysadmin",
-      "level": "Advanced",
+      "level": "Master",
       "keywords": [
         "Unix",
-        "Bash"
+        "Bash",
+        "Containers",
+        "Distributed systems",
+        "Databases"
       ]
     },
     {
       "name": "Data Science",
       "level": "Master",
       "keywords": [
-        "Jupyter notebook",
+        "Data analysis",
+        "Big Data",
         "Modelling",
-        "Validation"
+        "Validation",
+        "Jupyter notebook"
       ]
     },
     {
       "name": "Dataviz",
       "level": "Advanced",
       "keywords": [
-        "Foundations",
+        "General principles",
         "d3.js",
         "Matplotlib/Bokeh"
       ]
@@ -272,7 +277,7 @@
       "name": "Machine Learning",
       "level": "Advanced",
       "keywords": [
-        "Classic methods",
+        "Classical methods",
         "Deep Learning",
         "NLP",
         "Reinforcement Learning"
@@ -300,7 +305,7 @@
       "name": "Computer Vision",
       "level": "Intermediate",
       "keywords": [
-        "Classical Approaches",
+        "Classical approaches",
         "Machine Leaning"
       ]
     }
