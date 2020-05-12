@@ -227,6 +227,7 @@
       "keywords": [
         "HTML5",
         "CSS3",
+        "SVG",
         "Javascript",
         "Webservices REST"
       ]
@@ -279,9 +280,9 @@
       "keywords": [
         "Classical methods",
         "Deep Learning",
+        "Reinforcement Learning",
         "NLP",
-        "GAN",
-        "Reinforcement Learning"
+        "GAN"
       ]
     },
     {
@@ -299,7 +300,9 @@
       "keywords": [
         "Atmel",
         "ARM",
-        "RTOS"
+        "RTOS",
+        "Arduino",
+        "ESP32"
       ]
     },
     {
@@ -331,7 +334,8 @@
       "keywords": [
         "Cognitive neuroscience",
         "Ethology",
-        "Physiology"
+        "Physiology",
+        "Complex systems"
       ]
     },
     {
