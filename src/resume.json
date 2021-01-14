@@ -16,6 +16,17 @@
     "profiles": []
   },
   "work": [
+      {
+      "company": "Freelance",
+      "position": "Data engineer",
+      "startDate": "2020-08-04",
+      "endDate": "",
+      "highlights": [
+        "Design and development of IoT sensors for smart vehicles",
+        "Design and development of Big Data pipeline for real-time data collection and analytics",
+        "Design of an app backend that delivers financial consultation"
+      ]
+    },
     {
       "company": "Freelance",
       "position": "Web developer",
