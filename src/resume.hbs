@@ -171,6 +171,44 @@
 	    </section>
 	    {{/if}}
 
+	    {{#if publications.length}}
+	    <section id="publications" class="row">
+		    <aside class="column column-20">
+			    <h3>Publications</h3>
+		    </aside>
+		    <div class="column column-80">
+                {{#each publications}}
+                <div class="row item">
+			        <div class="column">
+                        <h4 class="publication withline">
+                            {{name}}
+                        </h4>
+				        <span class="date smalltext">
+					        {{moment releaseDate format="MMMM YYYY"}}
+				        </span>
+
+                        <div>
+				            {{#if journal}}
+				            <span class="journal">
+                                {{#website}} <a href="{{.}}"> {{/website}}
+                                {{journal}}
+				                {{#website}} </a> {{/website}}
+				            </span>
+				            {{/if}}
+
+				            {{#summary}}
+				            <div class="summary">
+					            <p>{{.}}</p>
+				            </div>
+				            {{/summary}}
+                        </div>
+			        </div>
+			    </div>
+			    {{/each}}
+		    </div>
+	    </section>
+	    {{/if}}
+
 	    {{#if education.length}}
 	    <section id="education" class="row">
 		    <aside class="column column-20">
@@ -362,42 +400,6 @@
 			    </div>
 			    {{/each}}
 			    </div>
-		    </div>
-	    </section>
-	    {{/if}}
-
-	    {{#if publications.length}}
-	    <section id="publications" class="row">
-		    <aside class="column column-20">
-			    <h3>Publications</h3>
-		    </aside>
-		    <div class="column column-80">
-                {{#each publications}}
-                <div class="row item">
-			        <div class="column">
-                        <h4 class="publication withline">
-                            {{name}}
-                            
-				            {{#website}}
-					            <a href="{{.}}" class="resource">
-					                <span class="fas fa-external-link-alt"></span>
-					            </a>
-				            {{/website}}
-                        </h4>
-				        <span class="date smalltext">
-					        {{moment releaseDate format="MMMM YYYY"}}
-				        </span>
-
-                        <div>
-				            {{#summary}}
-				            <div class="summary">
-					            <p>{{.}}</p>
-				            </div>
-				            {{/summary}}
-                        </div>
-			        </div>
-			    </div>
-			    {{/each}}
 		    </div>
 	    </section>
 	    {{/if}}
