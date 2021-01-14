@@ -230,7 +230,15 @@
       "awarder": "University of Messina"
     }
   ],
-  "publications": [],
+  "publications": [
+    {
+      "name": "Adversarial Learning of Robust and Safe Controllers for Cyber-Physical Systems",
+      "journal": "arXiv:2009.02019",
+      "website": "https://arxiv.org/abs/2009.02019",
+      "releaseDate": "2020-09-04",
+      "summary": "We introduce a novel learning-based approach to synthesize safe and robust controllers for autonomous Cyber-Physical Systems. The method learns two Neural Networks that act in an adversarial setting: the first one aims at generating troubling scenarios for the controller, while the second one aims at enforcing the safety constraints."
+    }
+  ],
   "skills": [
     {
       "name": "Web Development",
