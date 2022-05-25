@@ -13,7 +13,7 @@
   "author": "Francesco Franchina",
   "license": "UNLICENSED",
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.3",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-handlebars-layouts": "^0.3.0",
     "grunt-sass": "^3.0.2",
